@@ -1,0 +1,39 @@
+.access-denied {
+  display:inline-block;
+  width: auto;
+  height: auto;
+  text-transform: uppercase;
+  font-family: MartianMono-Regular !important;
+  font-size: 9.2rem !important;
+  letter-spacing: 0.3em;
+  text-shadow: 0 0 10px #808080, 0 0 10px #808080;
+  position: relative;
+  opacity: 1;
+  -webkit-box-reflect: below -0.42em linear-gradient(transparent, #0004); 
+  &.access-text{
+    color: #E9C46A;
+    }
+    &.denied-text{
+      color: rgb(255,0,0);
+      text-decoration: line-through;
+      text-decoration-color: red ;
+
+    }
+}
+.intro-wrap{
+.intro-text{
+  color: #CF5C36;
+  font-family: CoveredByYourGrace-Regular;
+  line-height: 1.8;
+  letter-spacing: 0.6rem;
+  font-size: 5.4rem;
+  text-shadow: 0 0 7px #000000, 0 0 7px #000000;
+
+}
+}
+.hide{
+  display: none;
+} 
+.show{
+  display: block;
+} 
