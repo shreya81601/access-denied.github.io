@@ -1,0 +1,282 @@
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Overlock'; 
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+s {
+    color: red;
+}
+
+
+/*=================================================================================*/
+/*BUTTONS*/
+
+
+/************* Mute button **************/
+
+.body-btn{
+  display: block;
+  width: 50px;
+  /* top:90%; */
+  bottom: 10%;
+  right:5%;
+  position:absolute;
+  background-color:grey;
+  border: none;
+  color: white;
+  padding: 3px 12px; 
+  font-size: 25px; 
+  cursor: pointer; 
+  border-radius:25px;
+}
+
+.body-btn:hover {
+  background-color: #FF5733;
+  background-color: #F7BC00;
+} 
+
+.left-btn {
+    position:absolute;
+    bottom: 10%;
+    left:5%;
+}
+
+.border {
+  /*box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.5);*/
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.border2 {
+  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.border3 {
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+/************* Rectangular buttons / choice buttons **************/
+
+.button {
+    text-decoration: none;
+    /*background: black;
+    border: none;
+    color: white;*/
+    font-family: 'Overlock'; 
+    font-size: 10pt;
+    padding: 10px;
+    border-radius: 10pt;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    /* background-color: #FFC000; */
+    background-color: rgba(247,188,0,1);
+    border: grey;
+  }
+
+  /* .choices #button-homepg-1 {
+    float: left;
+  }
+
+  .choices #button-homepg-2 {
+    float: right;
+  } */
+
+
+/*=================================================================================*/
+/*NAV BAR*/
+
+#nav_button
+{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+  /*color: #818181;*/
+  color: darkgrey;
+  font-size: 30px; 
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+ /* The side navigation menu */
+.sidenav {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /*padding-top: 60px;*/ /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow: hidden;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Arima Madurai', cursive;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* To highloght the active menu option */
+.sidenav a.active {
+  color: #f1f1f1;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  /*padding: 20px;*/
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+
+
+/*=================================================================================*/
+/*FOOTER*/
+
+footer
+{
+  margin: 0;
+  height: auto;
+  background: rgba(0,0,0,0.85);
+}
+
+footer p
+{
+  font-size: 14pt;
+  padding-left: 50px;
+  color: grey;
+  /*border: 1px solid yellow;*/
+}
+
+h4
+{
+  font-size: 18pt;
+  /*font-family: 'Katibeh', cursive;*/
+  margin: 20px;
+  color: ivory;
+}
+
+/*top block of footer i.e. footer part 1*/
+.info
+{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+/*Style Bodacious Black info*/
+.BB
+{
+  display: inline-block;
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+/*style contact info*/
+.contact
+{
+  display: inline-block;
+  flex: 1;
+  font-size: 16pt;
+  margin: 0;
+  text-align: center;
+  color: grey;
+}
+
+.contact a
+{
+  color: grey;
+  font-size: 16pt;
+}
+
+/*to highlight links*/
+.contact a:hover
+{
+  color: white;
+}
+
+footer .contact span
+{
+  font-size: 12pt;
+}
+
+/*for social media icons*/
+.social
+{
+  padding-top: 30px;
+  flex: 0.2;
+  text-align: left;
+}
+
+footer .social a
+{
+  text-decoration: none;
+  font-size: 18pt;
+  color: grey;
+}
+
+.social a:hover
+{
+  color: white;
+}
+
+/*bottom part of footer i.e. the copyright section*/
+.copyright
+{
+  text-align: center;
+  max-width: 100%;
+  display: block;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  color: darkgrey;
+  /*line-height: 37.5px;*/
+}
+
+footer .copyright p
+{
+  font-size: 16pt;
+  padding: 0px;
+  color: grey;
+}
