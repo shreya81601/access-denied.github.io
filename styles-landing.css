@@ -24,13 +24,17 @@
     transform: translate(-50%,-50%);
     opacity: 1;
   }
+
+  .no-wrap {
+    text-wrap: nowrap;
+  }
   
   /* h2 {
     font-size: 1.5em;
   } */
   
   h4 {
-    /* font-size: 1em; */
+    /* font-size: 2em; */
     color: grey;
   }
   

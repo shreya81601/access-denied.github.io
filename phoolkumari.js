@@ -1,9 +1,36 @@
 /*=======================================================================================*/
 /*FOR BG MUSIC - MUTE BUTTON*/
 
-var music = new Audio('data/bg1.mp3');
-var mute = document.getElementById("muteBtn");
-var x = document.getElementById("vol");
+// var music = new Audio('data/bg1.mp3');
+// var mute = document.getElementById("muteBtn");
+// var x = document.getElementById("vol");
+// music.volume = 0.1;
+
+// mute.addEventListener("click", function() {
+//     if (music.muted==true) {
+//       music.muted=false;
+//       music.play();
+//       x.className = "fa fa-volume-up";
+//     } else {
+//       music.muted=true;
+//       music.pause();
+//       /*x.classList.toggle("fa-volume-off");*/
+//       x.className = "fa fa-volume-off";
+//     }
+//   });
+
+// document.addEventListener("onload", function() {
+//     music.muted=false;
+//     music.play();
+//     x.className = "fa fa-volume-up";
+// });
+
+// document.addEventListener("onload", music.play());
+
+
+  /*=======================================================================================*/
+/*FOR TEXTBOX ANIMATIONS*/
+
 let i = 0;
 
 var text = [];
@@ -12,39 +39,37 @@ text.push("Unfortunately, last week too, your father once again resorted to viol
 text.push("Her words hang heavy in the air, a constant reminder of your family's ongoing battle with poverty and desperation. You have 3 younger siblings also depending upon you.<br><br>What do you want to do?");
 // console.log(text);
 
-mute.addEventListener("click", function() {
-    if (music.muted==true) {
-      music.muted=false;
-      music.play();
-      x.className = "fa fa-volume-up";
-    } else {
-      music.muted=true;
-      music.pause();
-      /*x.classList.toggle("fa-volume-off");*/
-      x.className = "fa fa-volume-off";
-    }
-  });
-
-
-  /*=======================================================================================*/
-/*FOR TEXTBOX ANIMATIONS*/
-
 var textbox = document.getElementById("phool-textbox-intro");
 var text_p = document.getElementById("phool-text-intro");
 var nextButton = document.getElementById("phool-text-intro-next");
 var choices = document.getElementById("phool-choices-intro");
 
-let height = textbox.offsetHeight;
-height -= 100;
-
-console.log(height);
-
 nextButton.style.opacity = 0;
+choices.style.opacity = 0;
+choices.style.display = "none";
+
+// let height = textbox.offsetHeight;
+// height -= 50;
+// console.log(height);
+
+let height = []
+
+for (let j = 0; j < text.length; j++) {
+    if (j == text.length - 1) { // i.e. choices page 
+        choices.style.display = "block";
+    }
+    text_p.innerHTML = text[j];
+    height[j] = textbox.offsetHeight;
+    height[j] -= 50;
+    console.log(height[j]);
+}
+
+text_p.innerHTML = text[0];
+choices.style.display = "none";
 textbox.style.height = "0%";
 textbox.style.paddingTop = "0";
 textbox.style.paddingBottom = "0";
-choices.style.opacity = 0;
-choices.style.display = "none";
+
 
 openWideTextBox();
 
@@ -74,7 +99,7 @@ function openTextBox() {
     // to open eyes - for text 1
     .add({
     targets: textbox,
-    height: ["0%", height+"px"],
+    height: ["0%", height[i]+"px"],
     paddingTop: ["0", "35px"],
     paddingBottom: ["0", "35px"],
     direction: "forward",
@@ -84,7 +109,7 @@ function openTextBox() {
     complete: ()=> {
         // console.log("print"),
         i++;
-        if (i<text.length) {
+        if (i<text.length) { // show next button on choices
             nextButton.style.display = "block";
             anime.timeline({
                 targets: nextButton, // make next button appear
@@ -140,6 +165,11 @@ function changeInnerText() {
         // height = textbox.offsetHeight;
         // console.log("text length="+text.length+"i="+i);
     }
+    // textbox.style.display = "none";
+    // textbox.style.height = "auto";
+    // height = textbox.offsetHeight;
+    // console.log(height);
+    // textbox.style.display = "block";
 }
 
 function showChoices() {
@@ -161,7 +191,7 @@ function showChoices() {
         opacity: [0, 1],
         direction: "forward",
         // delay: anime.stagger(300),
-        delay: 500,
+        delay: 100,
         duration: 1000,
     })
 }

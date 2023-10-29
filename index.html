@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Access Denied</title>
 	<!-- linking all the style sheets -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -27,8 +30,8 @@
 			<center>
 				<h2>Welcome to</h2>
 				<h1>ACCESS <s>DENIED</s></h1><hr>
-				<h4>"If you have the privilege to study, study for all those who cannot."</h4><br><br><br>
-				<button id="button-landing-pg" class="button"> click for new experiences >></button>
+				<h4 class="no-wrap"><i class="fa fa-quote-left fa-pull-left fa-border fa-lg" aria-hidden="true"></i>If you have the privilege to study, study for all those who cannot.</h4><br><br><br>
+				<button id="button-landing-pg" class="button"><span> click for new experiences </span></button>
 			</center>
 		</div>
 	</div>
@@ -58,12 +61,13 @@
 			<div class="intro">
 		    	<center>
                     <h1>ACCESS <s>DENIED</s></h1>
-                    <p>This project explores the struggles and hardships experienced by underprivileged children in India in their pursuit of equal access to quality and meaningful education, despite the implementation of several government policies specifically aimed at empowering them.</p>
-                    <p>YOU are invited to uncover the nuances and hidden complexities in their delicate situations by getting a chance to be in their shoes and be a decision-maker.</p>
-                    <p>What will you, as one of the children, choose to prioritize today?<br>The choices are tough and the stakes high.<br>Join us as we embark on this compelling journey, where every decision is a step forward in the path of survival.</p>
+                    <p>This project explores the struggles and hardships experienced by underprivileged children in India to gain an equal and meaningful education.</p>
+                    <p>YOU are invited to uncover the nuances and hidden complexities by getting a chance to be in their shoes.</p>
+                    <p>What will you, as one of the children, choose to prioritize today?<br>The choices are tough and the stakes high.</p>
+					<p>Join us as we embark on this compelling journey, where every decision is a step forward in the path of survival.</p>
                     <div class="choices">
-                        <p><a href="phoolkumari.html"><button id="button-homepg-1" class="button">ENTER THE INTERACTIVE WEB EXPERIENCE >></button></a></p>
-                        <p><button id="button-homepg-2" class="button">Read the inspirational stories behind these narratives</button></p>
+                        <p><a href="char-choice.html"><button id="button-homepg-1" class="button"><span>ENTER THE INTERACTIVE WEB EXPERIENCE </span></button></a></p>
+                        <p><button id="button-homepg-2" class="button"><span>Read the inspirational stories behind these narratives </span></button></p>
                     </div>
                 </center>
 		  	</div>
@@ -83,8 +87,8 @@
                     The stories featured are a result of ethnographic research and interviews, capturing the essence of real struggles encountered by specific households while shedding light on broader issues within the context of education.</p>
             </center></div>
         </div>
-		<button class="body-btn" id="muteBtn"><i id="vol" class="fa fa-volume-up" aria-hidden="true"></i></button>
-        <button class="body-btn left-btn" onclick="on()"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></button>
+		<button class="body-btn right-btn top-btn" id="muteBtn"><i id="vol" class="fa fa-volume-up" aria-hidden="true"></i></button>
+        <button class="body-btn left-btn top-btn" onclick="on()"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></button>
 		<!-- <div class="arrow1" title="Scroll for more information"><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
 		
 	</section>
@@ -118,8 +122,10 @@
 		</div>
 	</footer> -->
 
+	<script src="music.js" type="text/javascript"></script>
 	<script src="script-landing.js" type="text/javascript"></script>
-	<script src="script.js" type="text/javascript"></script> <!-- the common script for all containing nav bar script -->
+	<!-- <script src="script.js" type="text/javascript"></script>  -->
+	<!-- the common script for all containing nav bar script -->
 
 </body>
 </html>

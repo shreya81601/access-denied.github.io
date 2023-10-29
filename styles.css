@@ -26,10 +26,9 @@ s {
 .body-btn{
   display: block;
   width: 50px;
-  /* top:90%; */
-  bottom: 10%;
+  /* top:90%;
   right:5%;
-  position:absolute;
+  position:absolute; */
   background-color:grey;
   border: none;
   color: white;
@@ -46,8 +45,22 @@ s {
 
 .left-btn {
     position:absolute;
-    bottom: 10%;
     left:5%;
+}
+
+.bottom-btn {
+  position:absolute;
+  bottom: 10%;
+}
+
+.top-btn {
+  position:absolute;
+  top: 90%;
+}
+
+.right-btn {
+  position:absolute;
+  right: 5%;
 }
 
 .border {
@@ -81,6 +94,31 @@ s {
     /* background-color: #FFC000; */
     background-color: rgba(247,188,0,1);
     border: grey;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
   }
 
   /* .choices #button-homepg-1 {
