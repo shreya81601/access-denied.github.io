@@ -31,7 +31,7 @@
   /*=======================================================================================*/
 /*FOR TEXTBOX ANIMATIONS*/
 
-let i = 0;
+// let i = 0;
 
 var text = [];
 text.push("In the small village of Jalarpida, you, young fifteen-year-old Phool Kumari, with eyes far older than your age, find yourself perched on the edge of an unforgiving dichotomy. The worn-out textbooks in your modest room whisper promises of a better life, while the colorful bundle of balloons in your small hands bare the weight of your family's hunger.");
@@ -39,138 +39,143 @@ text.push("Unfortunately, last week too, your father once again resorted to viol
 text.push("Her words hang heavy in the air, a constant reminder of your family's ongoing battle with poverty and desperation. You have 3 younger siblings also depending upon you.<br><br>What do you want to do?");
 // console.log(text);
 
-var textbox = document.getElementById("phool-textbox-intro");
-var text_p = document.getElementById("phool-text-intro");
-var nextButton = document.getElementById("phool-text-intro-next");
-var choices = document.getElementById("phool-choices-intro");
-
-nextButton.style.opacity = 0;
-choices.style.opacity = 0;
-choices.style.display = "none";
-
-// let height = textbox.offsetHeight;
-// height -= 50;
-// console.log(height);
-
-let height = []
-
-for (let j = 0; j < text.length; j++) {
-    if (j == text.length - 1) { // i.e. choices page 
-        choices.style.display = "block";
-    }
-    text_p.innerHTML = text[j];
-    height[j] = textbox.offsetHeight;
-    height[j] -= 50;
-    console.log(height[j]);
-}
-
-text_p.innerHTML = text[0];
-choices.style.display = "none";
-textbox.style.height = "0%";
-textbox.style.paddingTop = "0";
-textbox.style.paddingBottom = "0";
 
 
-openWideTextBox();
+// SHIFTED ALL OF THIS CODE TO textbox.insertAdjacentElement. THE INDIVIDUAL NAME_FILES.JS HOLD ONLY TEXT - STORY DATA AND CHOICES ANAIMATION
 
-function openWideTextBox() {
-    anime.timeline({
-        easing: "easeInOutSine",
-    })
-    .add({
-    targets: textbox,
-    width: ["0%", "100%"],
-    // height: ["0%", "0%"],
-    direction: "forward",
-    delay: 100,
-    duration: 500,
-    complete: ()=> {
-        openTextBox();
-    }
-    });
-}
 
-function openTextBox() {
-    console.log("textbox opening");
+// var textbox = document.getElementById("phool-textbox-intro");
+// var text_p = document.getElementById("phool-text-intro");
+// var nextButton = document.getElementById("phool-text-intro-next");
+// var choices = document.getElementById("phool-choices-intro");
 
-    anime.timeline({
-        easing: "easeInOutSine",
-    })
-    // to open eyes - for text 1
-    .add({
-    targets: textbox,
-    height: ["0%", height[i]+"px"],
-    paddingTop: ["0", "35px"],
-    paddingBottom: ["0", "35px"],
-    direction: "forward",
-    delay: 3,
-    duration: 500,
-    easing: "easeInOutSine",
-    complete: ()=> {
-        // console.log("print"),
-        i++;
-        if (i<text.length) { // show next button on choices
-            nextButton.style.display = "block";
-            anime.timeline({
-                targets: nextButton, // make next button appear
-            }).add({
-                opacity: [0, 1],
-                direction: "forward",
-                delay: 300,
-                duration: 500,
-                easing: "easeInOutSine",
-            });
-        }
-        else {
-            // nextButton.style.display = "none";
-            showChoices();
-        }
-    }
-    });
-}
+// nextButton.style.opacity = 0;
+// choices.style.opacity = 0;
+// choices.style.display = "none";
 
-nextButton.addEventListener("click", function() {
-    closeTextBox();
-})
+// // let height = textbox.offsetHeight;
+// // height -= 50;
+// // console.log(height);
 
-function closeTextBox() {
-    // i++;
+// let height = []
 
-    console.log("textbox closed");
-    nextButton.style.opacity = 0; // make opacity 0 before closing
-    nextButton.style.display = "none";
+// for (let j = 0; j < text.length; j++) {
+//     if (j == text.length - 1) { // i.e. choices page 
+//         choices.style.display = "block";
+//     }
+//     text_p.innerHTML = text[j];
+//     height[j] = textbox.offsetHeight;
+//     height[j] -= 50;
+//     console.log(height[j]);
+// }
 
-    anime.timeline({
-        easing: "easeInOutSine",
-    })
-    // to close eyes - for text 1
-    .add({
-    targets: textbox,
-    height: ["0%"],
-    paddingTop: ["35px", "0"],
-    paddingBottom: ["35px", "0"],
-    direction: "forward",
-    delay: 3,
-    duration: 500,
-    complete: ()=>{
-        changeInnerText();
-        openTextBox();
-    }
-    });
-}
+// text_p.innerHTML = text[0];
+// choices.style.display = "none";
+// textbox.style.height = "0%";
+// textbox.style.paddingTop = "0";
+// textbox.style.paddingBottom = "0";
 
-function changeInnerText() {
-    if (i<text.length) {
-        text_p.innerHTML=text[i];
-        // height = textbox.offsetHeight;
-        // console.log("text length="+text.length+"i="+i);
-    }
-    // textbox.style.display = "none";
-    // textbox.style.height = "auto";
-    // height = textbox.offsetHeight;
-    // console.log(height);
-    // textbox.style.display = "block";
-}
+
+// openWideTextBox();
+
+// function openWideTextBox() {
+//     anime.timeline({
+//         easing: "easeInOutSine",
+//     })
+//     .add({
+//     targets: textbox,
+//     width: ["0%", "100%"],
+//     // height: ["0%", "0%"],
+//     direction: "forward",
+//     delay: 100,
+//     duration: 500,
+//     complete: ()=> {
+//         openTextBox();
+//     }
+//     });
+// }
+
+// function openTextBox() {
+//     console.log("textbox opening");
+
+//     anime.timeline({
+//         easing: "easeInOutSine",
+//     })
+//     // to open eyes - for text 1
+//     .add({
+//     targets: textbox,
+//     height: ["0%", height[i]+"px"],
+//     paddingTop: ["0", "35px"],
+//     paddingBottom: ["0", "35px"],
+//     direction: "forward",
+//     delay: 3,
+//     duration: 500,
+//     easing: "easeInOutSine",
+//     complete: ()=> {
+//         // console.log("print"),
+//         i++;
+//         if (i<text.length) { // show next button on choices
+//             nextButton.style.display = "block";
+//             anime.timeline({
+//                 targets: nextButton, // make next button appear
+//             }).add({
+//                 opacity: [0, 1],
+//                 direction: "forward",
+//                 delay: 300,
+//                 duration: 500,
+//                 easing: "easeInOutSine",
+//             });
+//         }
+//         else {
+//             // nextButton.style.display = "none";
+//             showChoices();
+//         }
+//     }
+//     });
+// }
+
+// nextButton.addEventListener("click", function() {
+//     closeTextBox();
+// })
+
+// function closeTextBox() {
+//     // i++;
+
+//     console.log("textbox closed");
+//     nextButton.style.opacity = 0; // make opacity 0 before closing
+//     nextButton.style.display = "none";
+
+//     anime.timeline({
+//         easing: "easeInOutSine",
+//     })
+//     // to close eyes - for text 1
+//     .add({
+//     targets: textbox,
+//     height: ["0%"],
+//     paddingTop: ["35px", "0"],
+//     paddingBottom: ["35px", "0"],
+//     direction: "forward",
+//     delay: 3,
+//     duration: 500,
+//     complete: ()=>{
+//         changeInnerText();
+//         openTextBox();
+//     }
+//     });
+// }
+
+// function changeInnerText() {
+//     if (i<text.length) {
+//         text_p.innerHTML=text[i];
+//         // height = textbox.offsetHeight;
+//         // console.log("text length="+text.length+"i="+i);
+//     }
+//     // textbox.style.display = "none";
+//     // textbox.style.height = "auto";
+//     // height = textbox.offsetHeight;
+//     // console.log(height);
+//     // textbox.style.display = "block";
+// }
 
 function showChoices() {
     choices.style.display = "block";

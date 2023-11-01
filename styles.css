@@ -1,3 +1,4 @@
+/* THIS IS THE MAIN CSS STYLES - COMMON FOR ALL PAGES*/
 
 body
 {
@@ -5,6 +6,9 @@ body
   padding: 0;
   font-family: 'Overlock'; 
   scroll-behavior: smooth;
+  @media screen {
+    
+  }
 }
 
 button {

@@ -25,11 +25,17 @@
     background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1; /*text color*/
     font-size: 14pt;
+    @media screen {
+        /* specific to class */
+    }
     width: auto; 
     height: auto;
     overflow: auto;
   }
 
+  @media screen {
+    /* for the full page */
+  }
   .choices {
     padding: 1em;
     position: relative;

@@ -1,32 +1,16 @@
 /*=======================================================================================*/
-/*FOR TEXTBOX ANIMATIONS*/
+/*FOR TEXTBOX ANIMATIONS - OPEN AND CLOSE TETXBOX*/
 
 let i = 0;
-
-var text = [];
-text.push("<hr><br><h4 style='color: grey;'><p>Meet the underprivileged poor family in the small village of Jalarpida in rural India. The grandfather toils on the unforgiving farms, while the mother, a househelp, barely keeps the family afloat. The father is a good-for-nothing, relentless and abusive drunk.</p><p>AND THE FOUR CHILDREN?</p><p>In the midst of a grueling struggle to make ends meet, they shoulder household responsibilities. They juggle between the pursuit of education, working menial jobs to earn a daily living, and helping at home.</p> </h4><br><br><hr><br><br><br>");
-text.push("<hr><br><h4 style='color: grey;'><p>The sun is rising and a new day dawns upon the family. Which child do you want to follow today?</p></h4><br><br><hr><br><br><br>")
-// console.log(text);
-
-// var textbox = document.getElementsByClassName("story-textbox");
-// var text_p = document.getElementsByClassName("story-text");
-// var nextButton = document.getElementById("phool-text-intro-next");
-// var choices = document.getElementsByClassName("choices");
 
 var textbox = document.getElementById("phool-textbox-intro");
 var text_p = document.getElementById("phool-text-intro");
 var nextButton = document.getElementById("phool-text-intro-next");
 var choices = document.getElementById("phool-choices-intro");
 
-console.log(choices);
-
 nextButton.style.opacity = 0;
 choices.style.opacity = 0;
 choices.style.display = "none";
-
-// let height = textbox.offsetHeight;
-// height -= 50;
-// console.log(height);
 
 let height = []
 
@@ -138,36 +122,5 @@ function closeTextBox() {
 function changeInnerText() {
     if (i<text.length) {
         text_p.innerHTML=text[i];
-        // height = textbox.offsetHeight;
-        // console.log("text length="+text.length+"i="+i);
     }
-    // textbox.style.display = "none";
-    // textbox.style.height = "auto";
-    // height = textbox.offsetHeight;
-    // console.log(height);
-    // textbox.style.display = "block";
-}
-
-function showChoices() {
-    choices.style.display = "block";
-    choices.style.opacity = 1;
-    anime.timeline({
-        easing: "easeInOutSine"
-    })
-    .add({
-        targets: '#phool-intro1',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 500,
-        duration: 1000,
-    })
-    .add({
-        targets: '#phool-intro2',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 100,
-        duration: 1000,
-    })
 }
