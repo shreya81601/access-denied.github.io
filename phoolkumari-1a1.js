@@ -1,9 +1,8 @@
 // THIS IS SPECIFIC JAVASCRIPT FILE FOR EACH PAGE - WHICH STORES STORY CONTENT AND CHOICES
 
 var text = [];
-text.push("Oh, I can't understand much - I have missed so many classes! And with all the household work, there was no time to revise or do homework. Plus, this grumbling stomach of mine is not helping at all. Oh my, my family must be hungry too...");
-text.push("What should I do?");
-
+text.push('Yay! The bell rang. I will get my meal now. But time passed. Where is the meal?<br>"The food yesterday was so bad," a girl whispered behind me.<br>"Let it at least come,” the boy next to her replied.<br>"I will take some home,” another girl mumbled.<br>"Only if it is fit to be eaten, you silly Geeta!"<br>My heart started to sink.');
+text.push("What should I do?")
 
 function showChoices() {
     choices.style.display = "block";

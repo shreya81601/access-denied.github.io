@@ -9,7 +9,7 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    /* background-image: url("data/bg1.avif"); */
+    background-image: url("data/bg1.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -33,17 +33,17 @@
 
 .story-textbox {
     position: absolute;
-    top: 40%; 
-    left: 20%;
+    top: 0%; 
+    /* left: 50%; */
     /* transform: translate(-50%,-50%); */
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1; /*text colr*/
     font-size: 14pt;
     width: auto; 
     height: auto;
     /* min-width: 300px;
     min-height: 150px; */
-    padding: 30px; 
+    padding: 35px; 
     overflow: auto;
     line-height: 1.8em;
     /* border-bottom: 2px solid white;
