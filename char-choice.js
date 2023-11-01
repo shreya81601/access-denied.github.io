@@ -4,8 +4,10 @@
 let i = 0;
 
 var text = [];
-text.push("<p>Meet the underprivileged poor family in the small village of Jalarpida in rural India. The grandfather toils on the unforgiving farms, while the mother, a househelp, barely keeps the family afloat. The father is a good-for-nothing, relentless and abusive drunk.</p> <p>AND THE FOUR CHILDREN?</p> <p>In the midst of a grueling struggle to make ends meet, they shoulder household responsibilities. They juggle between the pursuit of education, working menial jobs to earn a daily living, and helping at home.</p> ");
-text.push("The sun is rising and a new day dawns upon the family. Which child do you want to follow today?")
+// text.push("<p>Meet the poor Churiwal farming family where the father is a violent drunk, the mother is a house helper, unable to fend for her children, and the grandfather is too weak to tend to the fields.</p> ");
+// text.push("<p>THE THREE CHILDREN?</p> <p>Amidst the gruelling struggle to make ends meet, they juggle between working menial jobs to earn a daily living, shouldering household responsibilities, and attending school.</p> ");
+text.push("<p>Meet the poor Churiwal farming family where the father is a violent drunk, the mother is a house helper, unable to fend for her children, and the grandfather is too weak to tend to the fields.</p> <p>THE THREE CHILDREN?</p> <p>Amidst the gruelling struggle to make ends meet, they juggle between working menial jobs to earn a daily living, shouldering household responsibilities, and attending school.</p> ");
+text.push("The sun is rising and a new day dawns upon the family.<br>Who do you want to follow today?")
 
 var textbox = document.getElementById("welcome");
 var text_p = document.getElementById("sal-text");

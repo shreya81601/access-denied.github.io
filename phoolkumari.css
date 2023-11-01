@@ -8,9 +8,13 @@ h1 {
   }
   
   .landing_page .container_bgimg {
-    background-image: url("data/bg3.avif");
+    /* background-image: url("data/bg3.avif"); */
+    background-image: url("data/phool.kumari_05.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    background-attachment: fixed;
     position: relative;
     overflow: auto;
     margin: 0 auto; 
@@ -21,9 +25,9 @@ h1 {
     position: absolute;
     top:50%;
     left:5%;
-    transform: translate(0%,-50%); 
+    transform: translate(-0%,-50%); 
     height: 80vh;
-    width: 50%;
+    width: 35%;
     padding: 0;
 }
 

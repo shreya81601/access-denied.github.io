@@ -34,10 +34,8 @@
 // let i = 0;
 
 var text = [];
-text.push("In the small village of Jalarpida, you, young fifteen-year-old Phool Kumari, with eyes far older than your age, find yourself perched on the edge of an unforgiving dichotomy. The worn-out textbooks in your modest room whisper promises of a better life, while the colorful bundle of balloons in your small hands bare the weight of your family's hunger.");
-text.push("Unfortunately, last week too, your father once again resorted to violence, assaulting your mother and seizing her meager earnings for his alcohol addiction. In the echoing confines of your dimly-lit home, your mother's wearied voice, grumbled, \"No money for food. Figure out dinner yourselves.\"");
-text.push("Her words hang heavy in the air, a constant reminder of your family's ongoing battle with poverty and desperation. You have 3 younger siblings also depending upon you.<br><br>What do you want to do?");
-// console.log(text);
+text.push("I am 15 years old. More of a mother than a sister to my siblings. I sell balloons to earn a living for my family. Mumma’s income is not enough, and her little money is taken by Dad for his alcohol. So if I don’t work, we go to bed hungry. But Shashi, my neighbour, goes to school school with a sturdy green bag with shiny buckles. I want to go too.");
+text.push("What should I do?");
 
 
 
