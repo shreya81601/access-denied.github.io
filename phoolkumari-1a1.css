@@ -9,7 +9,7 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    background-image: url("data/bg1.avif");
+    background-image: url("data/classroom2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -24,19 +24,20 @@
 .container-text-choices {
     position: absolute;
     top:50%;
-    left:5%;
-    transform: translate(-0%,-50%); 
+    left:48%;
+    transform: translate(-50%,-50%); 
     height: 80vh;
-    width: 35%;
+    width: 40%;
     padding: 0;
 }
 
 .story-textbox {
     position: absolute;
-    top: 0%; 
+    /* top: 25%; */
+    bottom: 10%;
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.65); 
     color: #f1f1f1; /*text colr*/
     font-size: 14pt;
     width: auto; 

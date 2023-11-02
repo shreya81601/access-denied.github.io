@@ -9,7 +9,7 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    /* background-image: url("data/bg1.avif"); */
+    background-image: url("data/crowded-class1-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
