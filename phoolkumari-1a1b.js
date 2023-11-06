@@ -1,20 +1,52 @@
+// THIS IS SPECIFIC JAVASCRIPT FILE FOR EACH PAGE - WHICH STORES STORY CONTENT AND CHOICES
+
+var text = [];
+text.push('<p>Ugh, where is everyone going? School is not over yet.</p> <p>“Arrey! The school is practically over only, didi. You also go home,” a boy sitting next to me replied.</p> <p>Wa…wait…what? Why? Where is ma’am? Is she not coming to teach?</p>');
+text.push('<p>“Teachers don’t teach after the midday meal. They are busy cleaning all that mess.”</p>');
+text.push("What should I do?");
+
+var bg = [];
+bg.push("url('data/chaos1-2.png')");
+bg.push("url('data/mess.jpg')");
+bg.push("url('data/mess.jpg')");
+var bg_cont = document.getElementById("bg_img");
+
+
+function showChoices() {
+    choices.style.display = "block";
+    choices.style.opacity = 1;
+    anime.timeline({
+        easing: "easeInOutSine"
+    })
+    .add({
+        targets: '#phool-intro1',
+        opacity: [0, 1],
+        direction: "forward",
+        // delay: anime.stagger(300),
+        delay: 500,
+        duration: 1000,
+    })
+    .add({
+        targets: '#phool-intro2',
+        opacity: [0, 1],
+        direction: "forward",
+        // delay: anime.stagger(300),
+        delay: 100,
+        duration: 1000,
+    })
+}
+
+
 /*=======================================================================================*/
-/*FOR TEXTBOX ANIMATIONS*/
+/*FOR TEXTBOX ANIMATIONS - OPEN AND CLOSE TETXBOX*/
 
 let i = 0;
 
-var text = [];
-// text.push("<h1>DID YOU KNOW?</h1> <p>The Government of India implemented the midday meal policy to provide FREE LUNCHES to all students, just like Phoolkumari, as an incentive to come to school. Yet, there are frequent instances where the meals fail to reach schools or are unfit for consumption, eroding the policy's credibility and purpose.</p>");
-// text.push("As Phoolkumari, what do you want to do?");
-text.push("<img src='data/pk-fc-1.png' alt='pk-fc-1' width='70%'>");
-text.push("");
-
-var textbox = document.getElementById("welcome");
-var text_p = document.getElementById("sal-text");
-var nextButton = document.getElementById("next-btn");
+var textbox = document.getElementById("phool-textbox-intro");
+var textbox_pos = document.getElementById("textbox_cont");
+var text_p = document.getElementById("phool-text-intro");
+var nextButton = document.getElementById("phool-text-intro-next");
 var choices = document.getElementById("phool-choices-intro");
-
-// console.log(choices);
 
 nextButton.style.opacity = 0;
 choices.style.opacity = 0;
@@ -38,15 +70,28 @@ textbox.style.height = "0%";
 textbox.style.paddingTop = "0";
 textbox.style.paddingBottom = "0";
 
-openTextBox();
+
+openWideTextBox();
+
+function openWideTextBox() {
+    anime.timeline({
+        easing: "easeInOutSine",
+    })
+    .add({
+    targets: textbox,
+    width: ["0%", "100%"],
+    // height: ["0%", "0%"],
+    direction: "forward",
+    delay: 100,
+    duration: 500,
+    complete: ()=> {
+        openTextBox();
+    }
+    });
+}
 
 function openTextBox() {
     console.log("textbox opening");
-
-    if (i == text.length-1) {
-        choices.style.display = "block";
-        console.log("here");
-    }
 
     anime.timeline({
         easing: "easeInOutSine",
@@ -59,9 +104,8 @@ function openTextBox() {
     paddingBottom: ["0", "35px"],
     direction: "forward",
     delay: 3,
-    duration: 700,
+    duration: 500,
     easing: "easeInOutSine",
-    opacity: [0, 1],
     complete: ()=> {
         // console.log("print"),
         i++;
@@ -79,8 +123,6 @@ function openTextBox() {
         }
         else {
             // nextButton.style.display = "none";
-            textbox.style.borderTop = "1px solid white";
-            textbox.style.borderBottom = "1px solid white";
             showChoices();
         }
     }
@@ -110,7 +152,6 @@ function closeTextBox() {
     direction: "forward",
     delay: 3,
     duration: 500,
-    opacity: [1, 0],
     complete: ()=>{
         changeInnerText();
         openTextBox();
@@ -121,44 +162,12 @@ function closeTextBox() {
 function changeInnerText() {
     if (i<text.length) {
         text_p.innerHTML=text[i];
-        // height = textbox.offsetHeight;
-        // console.log("text length="+text.length+"i="+i);
+        bg_cont.style.backgroundImage = bg[i];
     }
-    // textbox.style.display = "none";
-    // textbox.style.height = "auto";
-    // height = textbox.offsetHeight;
-    // console.log(height);
-    // textbox.style.display = "block";
+    if (i == 1) {
+        textbox.style.background = "rgba(0,0,0,0.75)";
+        textbox.style.top = "5%";
+    }
 }
 
-function showChoices() {
-    choices.style.display = "block";
-    choices.style.opacity = 1;
-    anime.timeline({
-        easing: "easeInOutSine"
-    })
-    .add({
-        targets: '#phool-intro1',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 500,
-        duration: 1000,
-    })
-    .add({
-        targets: '#phool-intro2',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 100,
-        duration: 1000,
-    })
-    .add({
-        targets: '#phool-intro3',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 100,
-        duration: 1000,
-    })
-}
+
