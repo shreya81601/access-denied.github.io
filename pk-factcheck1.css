@@ -41,8 +41,7 @@
     padding: 1em;
     position: relative;
     width: auto; /*makes equal all widths*/
-    width: 100%; /*does it to its own width*/
-    display: flex;
+    display: block;
     align-content: center;
   }
 
@@ -51,8 +50,13 @@
     margin: auto;
   } */
  
-  .button {
+  /* .button {
     height: 100px;
     width: 150px;
     margin: 10px;
+  } */
+
+  #welcome h1 {
+    font-size: 1.5em;
+    color: red;
   }

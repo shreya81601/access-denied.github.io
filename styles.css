@@ -6,9 +6,10 @@ body
   padding: 0;
   font-family: 'Overlock'; 
   scroll-behavior: smooth;
-  @media screen {
+  color: black;
+  /* @media screen {
     
-  }
+  } */
 }
 
 button {
@@ -92,6 +93,7 @@ s {
     padding: 10px;
     border-radius: 10pt;
     cursor: pointer;
+    color: black;
   }
   
   .button:hover {
