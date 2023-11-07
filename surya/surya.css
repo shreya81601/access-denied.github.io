@@ -9,11 +9,11 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    background-image: url("../data/surya_02.jpeg");
+    background-image: url("../data/surya_03.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: right;
-    background-position-y: center;
+    /* background-position-x: right;
+    background-position-y: center; */
     background-attachment: fixed;
     position: relative;
     overflow: auto;
@@ -23,8 +23,10 @@
 
 .container-text-choices {
     position: absolute;
-    top:50%;
-    left:5%;
+    /* top: 50%;
+    right: 15%; */
+    top: 50%;
+    left: 30%;
     transform: translate(-0%,-50%); 
     height: 80vh;
     width: 35%;
@@ -33,10 +35,11 @@
 
 .story-textbox {
     position: absolute;
-    top: 0%; 
+    /* top: 20%;  */
+    bottom: 0%;
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.7); 
     color: #f1f1f1; /*text colr*/
     font-size: 14pt;
     width: auto; 

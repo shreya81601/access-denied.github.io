@@ -58,7 +58,6 @@
     left:50%; */
     /* transform: translateX(-50%); */
     width: auto; /*makes equal all widths*/
-    width: 100%; /*does it to its own width*/
   }
   
   /* #phool-intro1 {
