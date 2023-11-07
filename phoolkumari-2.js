@@ -1,16 +1,14 @@
 // THIS IS SPECIFIC JAVASCRIPT FILE FOR EACH PAGE - WHICH STORES STORY CONTENT AND CHOICES
 
 var text = [];
-text.push('<p>Ugh, where is everyone going? School is not over yet.</p> <p>“Arrey! The school is practically over only, didi. You also go home,” a boy sitting next to me replied.</p> <p>Wa…wait…what? Why? Where is ma’am? Is she not coming to teach?</p>');
-text.push('<p>“Teachers don’t teach after the midday meal. They are busy cleaning all that mess.”</p>');
-text.push('<p>Tears rolled down my eyes.<p> </p>I am still hungry.<br>I got no money.<br>Dad will hit me.<br>I learnt nothing.</p>');
+text.push('<p>I thrust the bouncing balloons at people at the red light in fancy cars. Many shoo-ed me away. Only a few rolled down their window.</p> <p>I managed to sell some balloons, “5… 10…15…” What came after 15? God only knows.</p>');
 // text.push("What should I do?");
 
-var bg = [];
-bg.push("url('data/chaos1-2.png')");
-bg.push("url('data/mess.jpg')");
-bg.push("url('data/mess.jpg')");
-var bg_cont = document.getElementById("bg_img");
+// var bg = [];
+// bg.push("url('data/chaos1-2.png')");
+// bg.push("url('data/mess.jpg')");
+// bg.push("url('data/mess.jpg')");
+// var bg_cont = document.getElementById("bg_img");
 
 
 function showChoices() {
@@ -132,7 +130,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "pk-factcheck-2.html";
+        location.href = "pk-factcheck-3.html";
     }
     else{
         closeTextBox();
@@ -168,15 +166,11 @@ function closeTextBox() {
 function changeInnerText() {
     if (i<text.length) {
         text_p.innerHTML=text[i];
-        bg_cont.style.backgroundImage = bg[i];
+        // bg_cont.style.backgroundImage = bg[i];
     }
     if (i == 1) {
         textbox.style.background = "rgba(0,0,0,0.75)";
         textbox.style.top = "5%";
-    }
-    if (i == 2) {
-        textbox.style.background = "rgba(0,0,0,0.75)";
-        textbox.style.width = "70%";
     }
 }
 

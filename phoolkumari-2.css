@@ -1,0 +1,65 @@
+ /*=========================================================================================*/
+  /*BACKGROUND*/
+  
+  h1 {
+    margin-top: 5px;
+    font-size: 2em;
+   font-family: 'Uncial Antiqua', cursive;
+  }
+  
+  .landing_page .container_bgimg {
+    /* background-image: url("data/bg3.avif"); */
+    background-image: url("data/balloons-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+    margin: 0 auto; 
+    height: 100vh;
+  }
+
+.container-text-choices {
+    position: absolute;
+    top:50%;
+    left:5%;
+    transform: translate(-0%,-50%); 
+    height: 80vh;
+    width: 35%;
+    padding: 0;
+}
+
+.story-textbox {
+    position: absolute;
+    top: 0%; 
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; /*text colr*/
+    font-size: 14pt;
+    width: auto; 
+    height: auto;
+    /* min-width: 300px;
+    min-height: 150px; */
+    padding: 35px; 
+    overflow: auto;
+    line-height: 1.8em;
+    /* border-bottom: 2px solid white;
+    border-top: 2px solid white; */
+  }
+
+  .choices {
+    padding: 1em;
+    position: relative;
+    /* bottom: 15%;
+    left:50%; */
+    /* transform: translateX(-50%); */
+    width: auto; /*makes equal all widths*/
+    width: 100%; /*does it to its own width*/
+  }
+  
+  /* #phool-intro1 {
+    width: 100%;
+  } */
