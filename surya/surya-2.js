@@ -1,10 +1,8 @@
 // THIS IS SPECIFIC JAVASCRIPT FILE FOR EACH PAGE - WHICH STORES STORY CONTENT AND CHOICES
 
 var text = [];
-// text.push("<p>Another hour goes by. The class is more chaotic than ever.</p> <p>“So, this is how it is going to be every day?” Surya asked the teacher.<br>“Yes, beta. Just yesterday Mishra Sir was stabbed by a boy in class 11.”</p> <p>Surya’s eyes widened in shock. “Stabbed?”</p>");
-text.push("<p>Hesitantly, “Ma’am, we won't study today?”</p> <p>“How can I teach in such chaos?” the teacher screeched at me.<br>Learning requires discipline and I refuse to enforce it here.<br>“Just yesterday Mishra Sir was stabbed by a boy in class 11. He asked for the boy’s homework. The boy had not done it and felt ashamed. So…</p> <p>He’s still in the hospital.”</p>");
+text.push('<p>Ajit handed me a knife. “If anyone tries to stop you, use this.”</p><p>I was running away after picking the pocket of a man when a hawaldar grabbed me. In terror, I used my knife to slice his hand. But he was too quick. He twisted my arm.</p><p>I now see the inside of a closed dark cell.</p>');
 // text.push("What should I do?");
-
 
 
 /*=======================================================================================*/
@@ -16,18 +14,12 @@ var textbox = document.getElementById("phool-textbox-intro");
 var textbox_pos = document.getElementById("textbox_cont");
 var text_p = document.getElementById("phool-text-intro");
 var nextButton = document.getElementById("phool-text-intro-next");
-var choices = document.getElementById("phool-choices-intro");
 
 nextButton.style.opacity = 0;
-choices.style.opacity = 0;
-choices.style.display = "none";
 
 let height = []
 
 for (let j = 0; j < text.length; j++) {
-    // if (j == text.length - 1) { // i.e. choices page 
-    //     choices.style.display = "block";
-    // }
     text_p.innerHTML = text[j];
     height[j] = textbox.offsetHeight;
     height[j] -= 50;
@@ -35,7 +27,6 @@ for (let j = 0; j < text.length; j++) {
 }
 
 text_p.innerHTML = text[0];
-choices.style.display = "none";
 textbox.style.height = "0%";
 textbox.style.paddingTop = "0";
 textbox.style.paddingBottom = "0";
@@ -101,7 +92,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "surya-fc-1.html";
+        location.href = "surya-fc-3.html";
     }
     else{
         closeTextBox();
@@ -137,9 +128,7 @@ function closeTextBox() {
 function changeInnerText() {
     if (i<text.length) {
         text_p.innerHTML=text[i];
-        // bg_cont.style.backgroundImage = bg[i];
     }
 }
-
 
 

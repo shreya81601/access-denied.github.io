@@ -1,7 +1,7 @@
 // THIS IS SPECIFIC JAVASCRIPT FILE FOR EACH PAGE - WHICH STORES STORY CONTENT AND CHOICES
 
 var text = [];
-text.push("I am, Surya. I am known to have a quick temper, much like my father. I like to hang out with my rowdy gang of friends. Earning a quick buck in street gambling makes me thrilled. I want to sit inside Babu’s government office all day and order people around. But for that, I will have to go to school.");
+text.push("I remember sitting beside my grandfather on the fields listening to his farming stories. Oh, what fun it was! But he is sick now and it is the harvest season. I want to help him. Good yield means happy Daadu. But he also says that school will teach me the future of farming. I want to become a big farmer one day.");
 text.push("What should I do?");
 
 

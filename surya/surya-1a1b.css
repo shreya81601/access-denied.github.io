@@ -9,7 +9,7 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    background-image: url("../data/fight-2.png");
+    background-image: url("../data/hospital.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -23,21 +23,23 @@
 
 .container-text-choices {
     position: absolute;
-    top:50%;
-    left:48%;
-    transform: translate(-50%,-50%); 
+    /* top: 50%;
+    right: 15%; */
+    top: 50%;
+    left: 12%;
+    transform: translate(0%,-50%); 
     height: 80vh;
-    width: 40%;
+    width: 30%;
     padding: 0;
 }
 
 .story-textbox {
     position: absolute;
-    /* top: 25%; */
-    bottom: 0;
+    /* top: 0%;  */
+    bottom: 0%;
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
-    background: rgba(0, 0, 0, 0.65); 
+    background: rgba(0, 0, 0, 0.7); 
     color: #f1f1f1; /*text colr*/
     font-size: 14pt;
     width: auto; 
@@ -58,6 +60,7 @@
     left:50%; */
     /* transform: translateX(-50%); */
     width: auto; /*makes equal all widths*/
+    width: 100%; /*does it to its own width*/
   }
   
   /* #phool-intro1 {

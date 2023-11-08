@@ -9,11 +9,11 @@
   
   .landing_page .container_bgimg {
     /* background-image: url("data/bg3.avif"); */
-    background-image: url("../data/bharat_01.jpg");
+    background-image: url("../data/bharat_05.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-x: right;
-    background-position-y: center; */
+    background-position-x: right;
+    background-position-y: center;
     background-attachment: fixed;
     position: relative;
     overflow: auto;
@@ -27,16 +27,16 @@
     right: 15%; */
     top: 50%;
     right: 10%;
-    transform: translate(-0%,-50%); 
+    transform: translate(0%,-50%); 
     height: 80vh;
-    width: 35%;
+    width: 30%;
     padding: 0;
 }
 
 .story-textbox {
     position: absolute;
-    /* top: 10%;  */
-    bottom: 5%;
+    top: 0%; 
+    /* bottom: 5%; */
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
     background: rgba(0, 0, 0, 0.7); 

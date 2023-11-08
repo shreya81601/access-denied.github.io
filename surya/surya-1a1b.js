@@ -2,7 +2,9 @@
 
 var text = [];
 // text.push("<p>Another hour goes by. The class is more chaotic than ever.</p> <p>“So, this is how it is going to be every day?” Surya asked the teacher.<br>“Yes, beta. Just yesterday Mishra Sir was stabbed by a boy in class 11.”</p> <p>Surya’s eyes widened in shock. “Stabbed?”</p>");
-text.push("<p>Hesitantly, “Ma’am, we won't study today?”</p> <p>“How can I teach in such chaos?” the teacher screeched at me.<br>Learning requires discipline and I refuse to enforce it here.<br>“Just yesterday Mishra Sir was stabbed by a boy in class 11. He asked for the boy’s homework. The boy had not done it and felt ashamed. So…</p> <p>He’s still in the hospital.”</p>");
+text.push("<p>Just as I stepped out of school, Ajit mocked me “You want to be Babu?” shoving me aside. I too pushed back and a fistfight started.</p>");
+text.push("<p>Today is the 11th day when I am in bed with bruised ribs from the blows he gave me for ditching him and going to school.</p>");
+text.push("<p>I liked school.<br>I liked Mrs Sharma.<br>But what did that get me?</p>");
 // text.push("What should I do?");
 
 
@@ -101,7 +103,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "surya-fc-1.html";
+        location.href = "surya-fc-2.html";
     }
     else{
         closeTextBox();
