@@ -34,7 +34,7 @@
 // let i = 0;
 
 var text = [];
-text.push("I am 15 years old. More of a mother than a sister to my siblings. I sell balloons to earn a living for my family. Mumma’s income is not enough, and her little money is taken by Dad for his alcohol. So if I don’t work, we go to bed hungry. But Shashi, my neighbour, goes to school school with a sturdy green bag with shiny buckles. I want to go too.");
+text.push("I am 15 years old. More of a mother than a sister to my siblings. I sell balloons to earn a living for my family. Mumma’s income is not enough, and her little money is taken by Dad for his alcohol. So if I don’t work, we go to bed hungry. But Shashi, my neighbour, goes to school with a sturdy green bag with shiny buckles. I want to go too.");
 text.push("What should I do?");
 
 

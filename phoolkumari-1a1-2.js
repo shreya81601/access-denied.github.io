@@ -2,7 +2,7 @@
 
 var text = [];
 text.push('<p>Yay! The bell rang. But, I stand in an empty room. Where is the meal?</p> <p>"The food yesterday was so bad," a girl whispered behind me.<br>"Let it at least come,” the boy next to her replied.<br>"I will take some home." another girl mumbled.<br>"Only if it is fit to be eaten, you silly Geeta!"</p> <p>My heart started to sink.</p>');
-text.push("<p>I decided to approach the teacher.</p> </p>Moved by my plight and courage to ask, she decided to take action and contact the higher authorities to arrange for food.<br>Excitement bubbled up within me as I saw the food arrive.</p>");
+text.push("<p>I decided to approach the teacher.</p> </p>Moved by my courage to ask, she decided to take action and contact the higher authorities to arrange for food.<br>Excitement bubbled up within me as I saw the food arrive.</p>");
 text.push("<p>But eww,  what food is this?</p> <p>“I can’t take this home!” quietly exclaimed Geeta. The other children too held their plates, some staring, some scoffing at the worm infested food.</p> <p>A few threw the food, a few picked out the insects and remaining packed for their family in torn polythene bags. What a mess!</p>")
 // text.push("What should I do?");
 
