@@ -1,0 +1,96 @@
+/*=========================================================================================*/
+  /*BACKGROUND*/
+  
+
+  #loading2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../data/bharat_06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-x: right;
+    background-position-y: center; */
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+    margin: 0 auto; 
+    height: 100vh;
+  }
+
+  #loading {
+
+    background-color: rgba(0, 0, 0, 0.75)
+  }
+
+  #welcome {
+    width: 75vw;
+  }
+
+  .landing_page .container_bgimg {
+    background-image: url('data/mess.jpg');
+    position: relative;
+    overflow: auto;
+    margin: 0 auto; 
+    height: 100vh;
+  }
+
+.container-text-choices {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    height: 50%;
+    width: 50%;
+    padding: 0;
+}
+
+.story-textbox {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; /*text color*/
+    font-size: 14pt;
+    @media screen {
+        /* specific to class */
+    }
+    width: auto; 
+    height: auto;
+    overflow: auto;
+  }
+
+  @media screen {
+    /* for the full page */
+  }
+  
+  .choices {
+    padding: 1em;
+    position: relative;
+    width: auto; /*makes equal all widths*/
+    display: block;
+    align-content: center;
+  }
+
+  /* .choices p {
+    display: inline-flexbox;
+    margin: auto;
+  } */
+ 
+  /* .button {
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+  } */
+
+  #welcome h1 {
+    font-size: 1.5em;
+    color: red;
+  }
+
+
+
+  .stats-stats {
+    display: flex;
+  }
+
+  .stats-stats img {
+    margin: 2px;
+  }

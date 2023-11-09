@@ -93,7 +93,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "surya-fc-3.html";
+        location.href = "bharat-fc-3.html";
     }
     else{
         closeTextBox();

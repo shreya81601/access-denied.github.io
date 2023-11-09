@@ -4,34 +4,37 @@
 let i = 0;
 
 var text = [];
-// text.push("<h1>DID YOU KNOW?</h1> <p>The Government of India implemented the midday meal policy to provide FREE LUNCHES to all students, just like Phoolkumari, as an incentive to come to school. Yet, there are frequent instances where the meals fail to reach schools or are unfit for consumption, eroding the policy's credibility and purpose.</p>");
-// text.push("As Phoolkumari, what do you want to do?");
-text.push("<img src='data/pk-fc-2-2.jpeg' alt='pk-fc-1' width='100%'>");
-// text.push("");
+
+text.push("Farmer suicide is a national crisis in India. Not only the individual but the entire family is affected by it, especially children. Emotionally stressful, education for them often takes a backseat to meet the immediate needs of their family, leading to high dropout rates.");
+
+text.push("<p>Want to make a difference? Contribute, share, donate, or submit your own stories and experiences. Contact us below.</p> <div class='contact'> <a href='mailto:shreya81601@gmail.com' title='Email Now'><i class='fa fa-envelope-open-o'></i> access.denied@gmail.com</a> </div>");
+text.push("Thank you for being a part of our story.<br>What would you like to do next?")
 
 var textbox = document.getElementById("welcome");
 var text_p = document.getElementById("sal-text");
 var nextButton = document.getElementById("next-btn");
-// var choices = document.getElementById("phool-choices-intro");
+var choices = document.getElementById("phool-choices-intro");
 
 // console.log(choices);
 
 nextButton.style.opacity = 0;
+choices.style.opacity = 0;
+choices.style.display = "none";
 
 let height = []
 
 for (let j = 0; j < text.length; j++) {
     if (j == text.length - 1) { // i.e. choices page 
-        // choices.style.display = "block";
+        choices.style.display = "flex";
     }
-    // text_p.innerHTML = text[j];
+    text_p.innerHTML = text[j];
     height[j] = textbox.offsetHeight;
     height[j] -= 50;
     console.log(height[j]);
 }
 
 text_p.innerHTML = text[0];
-// choices.style.display = "none";
+choices.style.display = "none";
 textbox.style.height = "0%";
 textbox.style.paddingTop = "0";
 textbox.style.paddingBottom = "0";
@@ -40,6 +43,11 @@ openTextBox();
 
 function openTextBox() {
     console.log("textbox opening");
+
+    if (i == text.length-1) {
+        choices.style.display = "block";
+        console.log("here");
+    }
 
     anime.timeline({
         easing: "easeInOutSine",
@@ -58,8 +66,7 @@ function openTextBox() {
     complete: ()=> {
         // console.log("print"),
         i++;
-        console.log(i);
-        // if (i<text.length) { // show next button on choices
+        if (i<text.length) { // show next button on choices
             nextButton.style.display = "block";
             anime.timeline({
                 targets: nextButton, // make next button appear
@@ -70,24 +77,17 @@ function openTextBox() {
                 duration: 500,
                 easing: "easeInOutSine",
             });
-        // }
-        // else {
-        //     // nextButton.style.display = "none";
-        //     textbox.style.borderTop = "1px solid white";
-        //     textbox.style.borderBottom = "1px solid white";
-        //     showChoices();
-        // }
+        }
+        else {
+            // nextButton.style.display = "none";
+            showChoices();
+        }
     }
     });
 }
 
 nextButton.addEventListener("click", function() {
-    if (i == text.length) {
-        location.href = "pk-factcheck-5.html";
-    }
-    else{
-        closeTextBox();
-    }
+    closeTextBox();
 })
 
 function closeTextBox() {
@@ -131,7 +131,7 @@ function changeInnerText() {
 }
 
 function showChoices() {
-    choices.style.display = "block";
+    choices.style.display = "flex";
     choices.style.opacity = 1;
     anime.timeline({
         easing: "easeInOutSine"
