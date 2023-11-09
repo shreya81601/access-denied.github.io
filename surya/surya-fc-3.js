@@ -6,8 +6,9 @@ let i = 0;
 var text = [];
 // text.push("<p>Meet the poor Churiwal farming family where the father is a violent drunk, the mother is a house helper, unable to fend for her children, and the grandfather is too weak to tend to the fields.</p> ");
 // text.push("<p>THE THREE CHILDREN?</p> <p>Amidst the gruelling struggle to make ends meet, they juggle between working menial jobs to earn a daily living, shouldering household responsibilities, and attending school.</p> ");
-text.push("Lack of proper parental guidance and poverty at home has led innocent children like Surya to resort to a life of crime. Control over their life is a powerful incentive that lures these young lives into a sordid world from which there is no return.");
-text.push("Want to make a difference? Contribute, share or submit your own story or experience. Contact us below.");
+text.push("Lack of proper guidance from parents and teachers amidst poverty has led innocent children like Surya to resort to a life of crime. Control over their life is a powerful incentive that lures these young lives into a sordid world from which there is no return.");
+// text.push("Would you like to reconsider your choices?");
+text.push("<p>Want to make a difference? Contribute, share, donate, or submit your own stories and experiences. Contact us below.</p> <div class='contact'> <a href='mailto:shreya81601@gmail.com' title='Email Now'><i class='fa fa-envelope-open-o'></i> access.denied@gmail.com</a> </div>");
 text.push("Thank you for being a part of our story.<br>What would you like to do next?")
 
 var textbox = document.getElementById("welcome");

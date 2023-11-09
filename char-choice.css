@@ -41,9 +41,9 @@
     padding: 1em;
     position: relative;
     width: auto; /*makes equal all widths*/
-    width: 100%; /*does it to its own width*/
     display: flex;
     align-content: center;
+    justify-content: center;
   }
 
   /* .choices p {

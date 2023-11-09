@@ -61,6 +61,10 @@ s {
 .top-btn {
   position:absolute;
   top: 90%;
+
+  @media screen and (max-width: 1180px) {
+    top: 80%;
+  }
 }
 
 .right-btn {
@@ -109,24 +113,42 @@ s {
     transition: 0.5s;
   }
   
-  .button span:after {
+  .button span.forward:after {
     content: '>>';
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: 20px;
     transition: 0.5s;
   }
   
-  .button:hover span {
+  .button:hover span.forward {
     padding-right: 25px;
   }
   
-  .button:hover span:after {
+  .button:hover span.forward:after {
     opacity: 1;
     right: 0;
   }
 
+  .button span.back:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span.back {
+    padding-left: 25px;
+  }
+  
+  .button:hover span.back:before {
+    opacity: 1;
+    left: 0;
+  }
+  
   /* .choices #button-homepg-1 {
     float: left;
   }

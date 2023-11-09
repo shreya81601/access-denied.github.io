@@ -1,14 +1,15 @@
- /*=========================================================================================*/
+/*=========================================================================================*/
   /*BACKGROUND*/
   
+
   #loading2 {
     width: 100vw;
     height: 100vh;
-    background-image: url('data/spoilt-food.jpg');
+    background-image: url('data/balloons-2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-x: right; */
-    /* background-position-y: center; */
+    background-position-x: right;
+    background-position-y: center;
     background-attachment: fixed;
     position: relative;
     overflow: auto;
@@ -18,11 +19,15 @@
 
   #loading {
 
-    background-color: rgba(0, 0, 0, 0.65)
+    background-color: rgba(0, 0, 0, 0.6)
   }
-  
+
+  #welcome {
+    width: 75vw;
+  }
+
   .landing_page .container_bgimg {
-    background-color: black;
+    background-image: url('data/mess.jpg');
     position: relative;
     overflow: auto;
     margin: 0 auto; 
@@ -78,4 +83,14 @@
   #welcome h1 {
     font-size: 1.5em;
     color: red;
+  }
+
+
+
+  .stats-stats {
+    display: flex;
+  }
+
+  .stats-stats img {
+    margin: 2px;
   }

@@ -130,7 +130,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "pk-factcheck-3.html";
+        location.href = "pk-factcheck-4.html";
     }
     else{
         closeTextBox();

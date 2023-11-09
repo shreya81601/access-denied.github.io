@@ -6,33 +6,32 @@ let i = 0;
 var text = [];
 // text.push("<h1>DID YOU KNOW?</h1> <p>The Government of India implemented the midday meal policy to provide FREE LUNCHES to all students, just like Phoolkumari, as an incentive to come to school. Yet, there are frequent instances where the meals fail to reach schools or are unfit for consumption, eroding the policy's credibility and purpose.</p>");
 // text.push("As Phoolkumari, what do you want to do?");
-text.push("<img src='../data/surya-fc-1.png' alt='pk-fc-1' width='100%'>");
+text.push("<img src='data/pk-fc-2-2.jpeg' alt='pk-fc-1' width='100%'>");
 // text.push("");
 
 var textbox = document.getElementById("welcome");
 var text_p = document.getElementById("sal-text");
 var nextButton = document.getElementById("next-btn");
-var choices = document.getElementById("phool-choices-intro");
+// var choices = document.getElementById("phool-choices-intro");
 
 // console.log(choices);
 
 nextButton.style.opacity = 0;
-choices.style.display = "none";
 
 let height = []
 
 for (let j = 0; j < text.length; j++) {
-    // if (j == text.length - 1) { // i.e. choices page 
-    //     // choices.style.display = "block";
-    // }
+    if (j == text.length - 1) { // i.e. choices page 
+        // choices.style.display = "block";
+    }
     // text_p.innerHTML = text[j];
     height[j] = textbox.offsetHeight;
     height[j] -= 50;
     console.log(height[j]);
 }
 
-// text_p.innerHTML = text[0];
-choices.style.display = "none";
+text_p.innerHTML = text[0];
+// choices.style.display = "none";
 textbox.style.height = "0%";
 textbox.style.paddingTop = "0";
 textbox.style.paddingBottom = "0";
@@ -84,7 +83,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "surya-1a1b.html";
+        location.href = "pk-factcheck-5.html";
     }
     else{
         closeTextBox();

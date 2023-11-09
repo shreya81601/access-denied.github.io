@@ -6,7 +6,7 @@ let i = 0;
 var text = [];
 // text.push("<h1>DID YOU KNOW?</h1> <p>The Government of India implemented the midday meal policy to provide FREE LUNCHES to all students, just like Phoolkumari, as an incentive to come to school. Yet, there are frequent instances where the meals fail to reach schools or are unfit for consumption, eroding the policy's credibility and purpose.</p>");
 // text.push("As Phoolkumari, what do you want to do?");
-text.push("<img src='data/pk-fc-1-4.png' alt='pk-fc-1' width='100%'>");
+text.push("<img src='data/pk-fc-1-5.png' alt='pk-fc-1' width='100%'>");
 // text.push("");
 
 var textbox = document.getElementById("welcome");
