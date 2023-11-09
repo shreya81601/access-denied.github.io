@@ -46,7 +46,7 @@
   /*BACKGROUND*/
   
   /*.landing_page .intro*/ h1 {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-size: 2em;
     font-family: 'Cinzel Decorative', cursive; /*nice for song headings*/
     /* font-family: 'Lobster Two', cursive;  */

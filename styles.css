@@ -346,3 +346,13 @@ footer .copyright p
   padding: 0px;
   color: grey;
 }
+
+
+
+
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
