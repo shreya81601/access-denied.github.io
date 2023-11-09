@@ -2,8 +2,8 @@
 
 var text = [];
 // text.push("<p>Another hour goes by. The class is more chaotic than ever.</p> <p>“So, this is how it is going to be every day?” Surya asked the teacher.<br>“Yes, beta. Just yesterday Mishra Sir was stabbed by a boy in class 11.”</p> <p>Surya’s eyes widened in shock. “Stabbed?”</p>");
-text.push("<p>Hesitantly, “Ma’am, we won't study today?”</p> <p>“How can I teach in such chaos?” the teacher screeched at me.<br>Learning requires discipline and I refuse to enforce it here.<br>“Just yesterday Mishra Sir was stabbed by a boy in class 11. He asked for the boy’s homework. The boy had not done it and felt ashamed. So…</p> <p>He’s still in the hospital.”</p>");
-// text.push("What should I do?");
+text.push("“Is the teacher not coming again?” I ask Jeetu.<br>“Oh, she had to go for election duty. She will come after a few weeks.”<br>“What? They are on leave again? They just went for some other duty a month back!”<br>I was disheartened. ");
+text.push("“Will she bring storybooks?”<br>Jeetu shrugged. “Most days, she just sits and does admin work. She doesn't teach much… You can read that book there on the shelf.”<br>“Ah, that has pages missing.”<br>“At least we have that much.”");
 
 
 
@@ -101,7 +101,7 @@ function openTextBox() {
 
 nextButton.addEventListener("click", function() {
     if (i == text.length) {
-        location.href = "surya-factcheck-1.html";
+        location.href = "bharat-fc-1.html";
     }
     else{
         closeTextBox();
