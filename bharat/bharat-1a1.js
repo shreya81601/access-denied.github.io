@@ -3,7 +3,7 @@
 var text = [];
 // text.push("<p>Another hour goes by. The class is more chaotic than ever.</p> <p>“So, this is how it is going to be every day?” Surya asked the teacher.<br>“Yes, beta. Just yesterday Mishra Sir was stabbed by a boy in class 11.”</p> <p>Surya’s eyes widened in shock. “Stabbed?”</p>");
 text.push("“Is the teacher not coming again?” I ask Jeetu.<br>“Oh, she had to go for election duty. She will come after a few weeks.”<br>“What? They are on leave again? They just went for some other duty a month back!”<br>I was disheartened. ");
-text.push("There are very less resources directed towards education in India whether in terms of resources like books, classrooms, infrastructure, facilities, opportunities, or the time provided by teachers to teach, etc. Until the resources and efforts directed towards this are changed, education for students will suffer.");
+text.push("Government school teachers are also government employees. They are absent from school for 2 - 2.5 months due to election duty, census collection and various other administrative tasks and training. This further causes student dropouts.");
 text.push("“Will she bring storybooks?”<br>Jeetu shrugged. “Most days, she just sits and does admin work. She doesn't teach much… You can read that book there on the shelf.”<br>“Ah, that has pages missing.”<br>“At least we have that much.”");
 // text.push("<p>I opened a book and started studying.</p> <p>“This is not making any sense to me, Jeetu. Can you explain?”“Oh this, we learnt it last year. How do you not know?”“They never taught us.”“How did you pass your exam then? This was a major chunk on it.”“What do you mean? They never fail us. Even if we write nothing on the exam…<br>I don’t need to learn to pass.”</p>");
 
