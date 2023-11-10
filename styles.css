@@ -67,6 +67,11 @@ s {
   }
 }
 
+.middle-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .right-btn {
   position:absolute;
   right: 5%;
