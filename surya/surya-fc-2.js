@@ -15,12 +15,14 @@ var textbox = document.getElementById("welcome");
 var text_p = document.getElementById("sal-text");
 var nextButton = document.getElementById("next-btn");
 var choices = document.getElementById("phool-choices-intro");
+var welcome_pg = document.getElementById("welcome");
 
 // console.log(choices);
 
 nextButton.style.opacity = 0;
 choices.style.opacity = 0;
 choices.style.display = "none";
+welcome_pg.style.display = "block";
 
 let height = []
 
@@ -138,27 +140,35 @@ function showChoices() {
         easing: "easeInOutSine"
     })
     .add({
-        targets: '#phool-intro1',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 500,
-        duration: 1000,
-    })
-    .add({
-        targets: '#phool-intro2',
+        targets: choices,
         opacity: [0, 1],
         direction: "forward",
         // delay: anime.stagger(300),
         delay: 100,
         duration: 1000,
     })
-    .add({
-        targets: '#phool-intro3',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 100,
-        duration: 1000,
-    })
+    // .add({
+    //     targets: '#phool-intro1',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 500,
+    //     duration: 1000,
+    // })
+    // .add({
+    //     targets: '#phool-intro2',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 100,
+    //     duration: 1000,
+    // })
+    // .add({
+    //     targets: '#phool-intro3',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 100,
+    //     duration: 1000,
+    // })
 }

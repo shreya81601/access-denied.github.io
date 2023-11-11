@@ -12,10 +12,12 @@ text.push("<img src='data/pk-fc-2-2.jpeg' alt='pk-fc-1' width='100%'>");
 var textbox = document.getElementById("welcome");
 var text_p = document.getElementById("sal-text");
 var nextButton = document.getElementById("next-btn");
+var welcome_pg = document.getElementById("welcome");
 // var choices = document.getElementById("phool-choices-intro");
 
 // console.log(choices);
 
+welcome_pg.style.display = "block";
 nextButton.style.opacity = 0;
 
 let height = []

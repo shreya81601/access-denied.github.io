@@ -136,27 +136,35 @@ function showChoices() {
         easing: "easeInOutSine"
     })
     .add({
-        targets: '#phool-intro1',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 500,
-        duration: 1000,
-    })
-    .add({
-        targets: '#phool-intro2',
+        targets: choices,
         opacity: [0, 1],
         direction: "forward",
         // delay: anime.stagger(300),
         delay: 100,
-        duration: 1000,
+        duration: 700,
     })
-    .add({
-        targets: '#phool-intro3',
-        opacity: [0, 1],
-        direction: "forward",
-        // delay: anime.stagger(300),
-        delay: 100,
-        duration: 1000,
-    })
+    // .add({
+    //     targets: '#phool-intro1',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 500,
+    //     duration: 1000,
+    // })
+    // .add({
+    //     targets: '#phool-intro2',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 100,
+    //     duration: 1000,
+    // })
+    // .add({
+    //     targets: '#phool-intro3',
+    //     opacity: [0, 1],
+    //     direction: "forward",
+    //     // delay: anime.stagger(300),
+    //     delay: 100,
+    //     duration: 1000,
+    // })
 }
